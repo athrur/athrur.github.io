@@ -5,9 +5,9 @@ subtitle: Blog
 url: "https://athrur.github.io"
 baseurl: "/"
 
-footer_only_homepage: true
-footer_url: "https://github.com/rhl-bthr"
-footer_text: "Theme by rhl-bthr"
+footer_only_homepage: false
+footer_url: "https://github.com/athrur/athrur.github.io"
+footer_text: "Website Source Code"
 
 profile-picture: assets/profile.png
 favicon_location: assets/favicon.ico
