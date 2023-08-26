@@ -1,3 +1,6 @@
+# Personal Website
+This is the repository for my personal website. It is built with Jekyll and hosted on GitHub Pages. The theme is based on Parchment (see below). The website is live at [https://athrur.github.io](https://athrur.github.io).
+
 # Parchment
 A clean, single column blog template built for jekyll
 
