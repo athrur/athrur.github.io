@@ -1,9 +1,9 @@
-title: Parchment
-author: pro-panda
-subtitle: The life of a frustrated engineer
+title: Arthur Robertson
+author: Arthur Robertson
+subtitle: Blog
 
-url: "https://rahulbothra.com"
-baseurl: "/parchment"
+url: "https://athrur.github.io"
+baseurl: "/"
 
 footer_only_homepage: true
 footer_url: "https://github.com/rhl-bthr"
@@ -20,5 +20,7 @@ sass:
 navbar:
  - name: "About"
    link: "about"
- - name: "Resume"
-   absolute-link: "https://rahulbothra.com/cv.pdf"
+ - name: "Contact"
+   absolute-link: "https://linkedin.com/in/arthur-robertson"
+#  - name: "Resume"
+  #  absolute-link: "https://rahulbothra.com/cv.pdf"
