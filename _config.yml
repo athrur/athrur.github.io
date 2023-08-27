@@ -24,3 +24,6 @@ navbar:
    absolute-link: "https://linkedin.com/in/arthur-robertson"
 #  - name: "Resume"
   #  absolute-link: "https://rahulbothra.com/cv.pdf"
+
+plugins:
+  - jekyll-sitemap
