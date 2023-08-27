@@ -9,9 +9,9 @@ tags: [coursework, python, c, java]
 As my first year of university comes to a close, I thought it would be fun to look back on some of the coursework I've completed. Unfortunately I'm not allowed to share the code for any of these projects (university rules), but I can share my thoughts.
 
 # Saturated Reverse Polish Notation Calculator
-Our first introduction to coursework at University was to create a Satured Reverse Polish Notation (SRPN) Calculator. Rather than being given a set of requirements and documentation, our job was to reverse engineer the compiled program and implement as many of the features we could find in Python. This proved quite challenging, as there was a whole host of features to be discovered by trial and error, with limited time.
+Our first introduction to coursework at University was to create a [Satured Reverse Polish Notation](https://en.wikipedia.org/wiki/Reverse_Polish_notation) (SRPN) Calculator. Rather than being given a set of requirements and documentation, our job was to reverse engineer the compiled program and implement as many of the features we could find in Python. This proved quite challenging, as there was a whole host of features to be discovered by trial and error, with limited time.
 
-The project required the use of a stack to store the numbers and allow them to be evaluated in postfix notation, instead of the infix notation we are all used to. This was a great introduction to the concept of stacks, and how they can be used to solve problems.
+The project required the use of a stack to store the numbers and allow them to be evaluated in [postfix notation](https://en.wikipedia.org/wiki/Reverse_Polish_notation), instead of the [infix notation](https://en.wikipedia.org/wiki/Infix_notation) we are all used to. This was a great introduction to the concept of stacks, and how they can be used to solve problems.
 
 ![Infix vs Postfix](https://www.ritambhara.in/wp-content/uploads/2012/06/reverse-polish-.jpg)
 
@@ -28,7 +28,7 @@ Overall I enjoyed the project and thought it was a good start to the year.
 
 The next project as part of the Artificial Intelligence module was to build a Sudoku Solver in Python. This was quite a step up from the previous project, and required applying several artificial intelligence concepts we had been taught. The project criteria was simple: given a sudoku puzzle, return the solved puzzle, with computation time taken to solve being a factor in the marking.
 
-First of all, we were encouraged to implement a basic backtracking algorithm using recursion. This gave us an idea of how to approach the task, but was too slow to get a good grade. Constraint Propogation was the next step and allowed us to drastically reduce the number of possibilities for each cell and speed up the algorithm. Finally, I implemented a search algorithm to find the cell with the least number of possibilities, and try each of them in turn. This proved sufficient to get the top marks.
+First of all, we were encouraged to implement a basic [backtracking](https://en.wikipedia.org/wiki/Backtracking) algorithm using recursion. This gave us an idea of how to approach the task, but was too slow to get a good grade. [Constraint Propogation](https://www.ibm.com/docs/en/icos/20.1.0?topic=optimizer-constraint-propagation) was the next step and allowed us to drastically reduce the number of possibilities for each cell and speed up the algorithm. Finally, I implemented a search algorithm to find the cell with the least number of possibilities, and try each of them in turn. This proved sufficient to get the top marks.
 
 ![Sudoku Search Grid](https://www.freecodecamp.org/news/content/images/2019/09/image-212.png)
 
@@ -55,7 +55,7 @@ The trickiest part of the project was the enemy bot, which required the implemen
 
 # C and Java Exercises
 
-The C and Java Exercises were actually two seperate bits of coursework, but there's not much to say about them. They were a series of small exercises to get us used to the syntax of the languages, and were quite enjoyable. I found the C exercises more challenging, as I had never used C before, but I found it quite enjoyable to learn a new language. The problems were similar to the likes of Leetcode, with a difficulty of maybe Easy to Medium. There was also a question involving multithreading file handling in Java, which was quite interesting.
+The C and Java Exercises were actually two seperate bits of coursework, but there's not much to say about them. They were a series of small exercises to get us used to the syntax of the languages, and were quite enjoyable. I found the C exercises more challenging, as I had never used C before, but I found it quite enjoyable to learn a new language. The problems were similar to the likes of [Leetcode](https://leetcode.com/), with a difficulty of maybe Easy to Medium. There was also a question involving multithreading file handling in Java, which was quite interesting.
 
 ## Ratings
 - Difficulty: 2.5/5
@@ -67,7 +67,7 @@ The C and Java Exercises were actually two seperate bits of coursework, but ther
 
 Now onto the final and favourite project of the year. The Spam or Ham Classifier was a project to build a spam classifier using whatever implementation we wanted, as long as it was in Python and only used numpy. We were given a dataset of 1000 emails with features already extracted, and our goal was to build a classifier to be marked on an unseen dataset of emails. Over the year we had learned several different techniques for classification, including Naive Bayes and Nearest Neighbour, but we were encouraged to use whatever we wanted.
 
-I experimented extensively on the dataset with different techniques. I eventually settled on a voting algorithm which combined the results of several different classifiers. This included Nearest K Neighbours, Naives Bayes, and Logistic Regression. This allowed my classifier to achieve an accuracy of 93% on the unseen dataset, which was considered excellent.
+I experimented extensively on the dataset with different techniques. I eventually settled on a voting algorithm which combined the results of several different classifiers. This included [Nearest K Neighbours](https://www.ibm.com/topics/knn), [Naives Bayes](https://www.ibm.com/topics/naive-bayes), and [Logistic Regression](https://www.ibm.com/topics/logistic-regression). This allowed my classifier to achieve an accuracy of 93% on the unseen dataset, which was considered excellent.
 
 ![Spam or Ham?](https://sm.pcmag.com/pcmag_me/news/e/email-spam/email-spam-rates-dip-below-50-percent_cupe.jpg)
 
