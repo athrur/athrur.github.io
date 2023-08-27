@@ -13,7 +13,7 @@ Our first introduction to coursework at University was to create a [Satured Reve
 
 The project required the use of a stack to store the numbers and allow them to be evaluated in [postfix notation](https://en.wikipedia.org/wiki/Reverse_Polish_notation), instead of the [infix notation](https://en.wikipedia.org/wiki/Infix_notation) we are all used to. This was a great introduction to the concept of stacks, and how they can be used to solve problems.
 
-![Infix vs Postfix](https://www.ritambhara.in/wp-content/uploads/2012/06/reverse-polish-.jpg)
+<img src="../assets/infix-vs-postfix.jpg">
 
 Overall I enjoyed the project and thought it was a good start to the year.
 
@@ -30,7 +30,7 @@ The next project as part of the Artificial Intelligence module was to build a Su
 
 First of all, we were encouraged to implement a basic [backtracking](https://en.wikipedia.org/wiki/Backtracking) algorithm using recursion. This gave us an idea of how to approach the task, but was too slow to get a good grade. [Constraint Propogation](https://www.ibm.com/docs/en/icos/20.1.0?topic=optimizer-constraint-propagation) was the next step and allowed us to drastically reduce the number of possibilities for each cell and speed up the algorithm. Finally, I implemented a search algorithm to find the cell with the least number of possibilities, and try each of them in turn. This proved sufficient to get the top marks.
 
-![Sudoku Search Grid](https://www.freecodecamp.org/news/content/images/2019/09/image-212.png)
+<img src="../assets/sudoku.png">
 
 ## Ratings
 - Difficulty: 4/5
@@ -45,7 +45,7 @@ The third project of the year was to build a 2D ascii dungeon crawler game in Ja
 
 The trickiest part of the project was the enemy bot, which required the implementation of a pathfinding algorithm. This involved a lot of trial and error and debugging, but eventually I managed to get it working perfectly. The bot would find the shortest path to the player, and follow it, avoiding obstacles along the way. This was my first introduction to Java and I found it quite enjoyable.
 
-![Dungeon of Doom](https://gcdnb.pbrd.co/images/2s21TLTsTywJ.png)
+<img src="../assets/dod.png">
 
 ## Ratings
 - Difficulty: 4/5
@@ -69,7 +69,7 @@ Now onto the final and favourite project of the year. The Spam or Ham Classifier
 
 I experimented extensively on the dataset with different techniques. I eventually settled on a voting algorithm which combined the results of several different classifiers. This included [Nearest K Neighbours](https://www.ibm.com/topics/knn), [Naives Bayes](https://www.ibm.com/topics/naive-bayes), and [Logistic Regression](https://www.ibm.com/topics/logistic-regression). This allowed my classifier to achieve an accuracy of 93% on the unseen dataset, which was considered excellent.
 
-![Spam or Ham?](https://sm.pcmag.com/pcmag_me/news/e/email-spam/email-spam-rates-dip-below-50-percent_cupe.jpg)
+<img src="../assets/spam-or-ham.jpg">
 
 ## Ratings
 - Difficulty: 4.5/5

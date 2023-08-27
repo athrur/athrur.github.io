@@ -22,7 +22,7 @@ Given the simplicity of the game, yet the difficulty in mastering it, I thought 
 
 The first thing and most important thing we had to do was define our agent and how it would play the game. In blackjack, the face up card of the dealer is very important, as it gives the player an idea of what the dealer's score is, and therefore whether they should hit or stand. Whether the player has an ace or not is also important, as it can be used as a 1 or an 11. With this in mind our agent, what we are trying to improve, is shaped like the following:
 
-![Agent Board](https://gcdnb.pbrd.co/images/ZNWzxqUtAO33.png?o=1)
+<img src="../assets/agent-board.png">
 
 The above is effectively a policy for the agent. The agent will use the dealer's face up card, as well as the two cards in it's hand and refer to the policy to decide what to do. 0 means stand, 1 means hit. If the agent hits, it will be dealt another card and then will refer back to the policy to decide again, until the game is over. To start with, this policy is randomly generated for the agent.
 
