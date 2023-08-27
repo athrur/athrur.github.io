@@ -5,7 +5,7 @@ subtitle: Blog
 url: "https://athrur.github.io"
 baseurl: "/"
 
-footer_only_homepage: false
+footer: true
 footer_url: "https://github.com/athrur/athrur.github.io"
 footer_text: "Website Source Code"
 
