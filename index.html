@@ -4,7 +4,7 @@ layout: default
 
 {% assign has_post = false %}
 {% for post in site.posts %}
-    {% if post.private == true %}
+    {% if post.hidden == true %}
         {% continue %}
     {% endif %}
     <div class="post-card">
