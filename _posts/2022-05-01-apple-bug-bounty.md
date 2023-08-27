@@ -10,4 +10,4 @@ hidden: true
 
 In this article I will be discussing a security vulnerability I discovered in a Delivery Logistic Application belonging to Apple Inc.
 
-# 
+**COMING SOON**...
