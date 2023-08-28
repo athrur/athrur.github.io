@@ -16,53 +16,77 @@ Given the simplicity of the game, yet the difficulty in mastering it, I thought 
 
 # Genetic Algorithm
 
-[A genetic algorithm](https://en.wikipedia.org/wiki/Genetic_algorithm) is a type of evolutionary algorithm that is inspired by the process of natural selection. The algorithm starts with a population of individuals, each with their own set of genes. The algorithm then evaluates each individual and selects the best individuals to reproduce. The algorithm then creates a new population of individuals by combining the genes of the selected individuals. This process is repeated until the algorithm converges on a solution. 
+[A genetic algorithm](https://en.wikipedia.org/wiki/Genetic_algorithm) mimics the process of natural selection to solve complex problems. The algorithm starts with a population of individuals, each with a unique set of genes. After evaluating these individuals, the algorithm selects the most promising ones for reproduction. By merging the genes of these selected individuals, the algorithm breeds a new generation, progressing toward a solution through successive iterations.
 
 # Training the Algorithm
 
-The first thing and most important thing we had to do was define our agent and how it would play the game. In blackjack, the face-up card of the dealer is very important, as it gives the player an idea of what the dealer's score is, and therefore whether they should hit or stand. Whether the player has an ace or not is also important, as it can be used as a 1 or an 11. With this in mind our agent, what we are trying to improve, is shaped like the following:
+The first thing and most important thing we had to do was define our AI agent's gameplay strategy. In blackjack, the dealer's face-up card holds vital information, influencing the player's decisions. The presence of an ace in the player's hand also adds a strategic layer, capable of representing either 1 or 11. Our AI agent's strategy is structured as follows:
 
 <img src="../assets/agent-board.png">
 
-The above is effectively a policy for the agent. The agent will use the dealer's face-up card, as well as the two cards in its hand and refer to the policy to decide what to do. 0 means stand, and 1 means hit. If the agent hits, it will be dealt another card and then will refer back to the policy to decide again, until the game is over. To start with, this policy is randomly generated for the agent.
+This strategy essentially guides the agent's choices. Using the dealer's visible card and the agent's own hand, it determines whether the agent should hit or stand (represented by 0 and 1, respectively). The agent iteratively employs this strategy, hitting and re-evaluating as the game progresses. Initially, the strategy is generated randomly.
 
-First, the algorithm needs to create a population of agents. This is essentially a large number of agents all with a different randomly generated policy grid such as the one pictured above. Each agent will perform differently in the game, based on the rules defined in the policy. 
+The algorithm kicks off by creating a diverse population of agents, each endowed with a distinct randomly generated strategy. Each agent's performance in the game varies based on its strategy.
 
-Now we need a way to evaluate each agent. To do this, we will have each agent play a large number of games of blackjack, and record the results. Effectively to do this we calculate how much money the agent has at the end of `N` games, betting £1 for each game. The rules of blackjack define the winning payout to be 1:1, unless you get blackjack (Ace + 10), in which case the payout is 3:2. Losing the game results in your bet being lost and drawing results in your bet being returned.
+Now we need a way to evaluate each agent. To do this, we have each agent play a large number of games of blackjack, and record the results. Effectively to do this we calculate how much money the agent has at the end of `N` games, betting £1 for each game. The rules of blackjack define the winning payout to be 1:1, unless you get blackjack (Ace + 10), in which case the payout is 3:2. Losing the game results in your bet being lost and drawing results in your bet being returned.
 
 Now after we have tested each agent `N` times and got a score for each agent, we can select the best agents to reproduce. To do this, we will use a [tournament selection](https://en.wikipedia.org/wiki/Tournament_selection) method. The tournament selection works in the following way:
 
 
-<div>
-1. choose k (the tournament size) individuals from the population at random <br>
-2. choose the best individual from the tournament with probability p <br>
-3. choose the second best individual with probability p*(1-p) <br>
-4. choose the third best individual with probability p*((1-p)^2) <br>
+```
+1. choose k (the tournament size) individuals from the population at random
+2. choose the best individual from the tournament with probability p
+3. choose the second best individual with probability p*(1-p)
+4. choose the third best individual with probability p*((1-p)^2)
 ... and so on
-</div>
+```
 
 
 Now we have selected the best agents, we can create a new population of agents. To do this, we will use a [crossover](https://en.wikipedia.org/wiki/Crossover_(genetic_algorithm)) method. I chose to use the uniform crossover method, which works in the following way:
 
-<div>
-for each gene in the policy grid, choose a random number either 0 or 1: <br>
- - if the number is 0 take the gene from the first parent <br>
+```
+for each gene in the policy grid, choose a random number either 0 or 1:
+ - if the number is 0 take the gene from the first parent
  - if the number is 1 take the gene from the second parent
-</div>
+```
 
-This produces 1 child. I chose to produce 2 children from each pair of parents. Child number 2 is produced in the same way as child number 1, except the parents are swapped, so the first parent becomes the second parent and vice versa.
+Two offspring are generated per parent pair, with the parents swapped for the second child.
 
-We repeat this process for all pairs of parents from our tournament selection, and we now have a new population of agents. We can now repeat the process of evaluating the agents, selecting the best agents, and creating a new population of agents. We repeat this process until we converge on a solution.
+This cycle of evaluation, selection, and reproduction continues until convergence on a solution is achieved.
 
 ## Mutation
 
-One thing we haven't considered yet is mutation. Mutation is the process of randomly changing the genes of an individual. This is important as it allows the algorithm to explore the search space more effectively. Without mutation, the algorithm would be stuck in a local minimum, and would not be able to find the global minimum.
+One thing we haven't considered yet is mutation. Mutation is the process of randomly changing the genes of an individual. Through mutation we inject randomness into the gene pool, enabling the algorithm to explore the search space more effectively. Without mutation, the algorithm risks getting trapped in local optima, missing out on the global solution.
 
 Implementing mutation is simple. First, we need to define a mutation chance. This is the probability that a gene will be mutated. Then for each gene in the policy grid, if the mutation chance is greater than a random number between 0 and 1, we will mutate the gene. To mutate the gene, we will simply set it randomly to either 0 or 1.
 
-Mutation is a very important part of the algorithm, and without it, the algorithm would not be able to find the optimal solution. However, it is important to note that too many mutations can be detrimental to the algorithm. If the mutation chance is too high, the algorithm will not be able to converge on a solution. This is because the algorithm will be mutating the genes too much, and will not be able to find a good solution. This is why it is important to define a good mutation chance.
+While mutation is crucial, excessive mutation can be detrimental. An overly high mutation chance disrupts convergence, preventing the discovery of an optimal solution. Striking the right balance in mutation chance is essential to the algorithm's success.
 
 # Technical Implementation
+
+Transitioning from the conceptual understanding to practical implementation, let's delve into the technical aspects. For this project, we are using ~~Python~~ C++ for it's speed and simplicity. 
+
+> I actually originally wrote the code in Python, but worked out I could make it run literally 40 times faster by using C++ instead... so I did.
+
+## Blackjack Engine
+
+First of all, we need a way to play blackjack. For our agents to simulate games of blackjack many thousands of time per generation, we need a fast and efficient blackjack engine.
+
+Blackjack is suit agnostic, meaning that the suit of a card is irrelevant. All face cards (Jack, Queen, King) are also equal to 10, meaning that there are only actually 10 unique card types (2 through 10 + ace). Casinos also typically play blackjack with multiple decks, sometimes as many as 8. Whilst it would be better to simulate blackjack with the same number of decks as the casino, for simplicity we are simulating an infinite number of decks. This means that the probability of drawing a card is always the same, regardless of what cards have been drawn previously.
+
+```cpp
+Deck::Deck() : cards{2, 3, 4, 5, 6, 7, 8, 9, 10, 10, 10, 10, 11}, gen(rd()), dis(0, 12){}
+
+int Deck::deal() { 
+    return cards[dis(gen)]; 
+}
+```
+
+Here is the code for the deck. We have a vector of cards, with the values of each card. We then have a random number generator, which we use to generate a random number between 0 and 12, which we use to index the vector of cards. This is all we need to quickly and efficiently simulate pulling a card from a deck.
+
+... To be finished ...
+
+# Parameters
 Coming soon...
 
 # Results
