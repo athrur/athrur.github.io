@@ -21,6 +21,7 @@ navbar:
    link: "about"
  - name: "Contact"
    absolute-link: "https://linkedin.com/in/arthur-robertson"
+   new-tab: true
 
 plugins:
   - jekyll-sitemap
