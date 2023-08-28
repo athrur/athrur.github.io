@@ -6,3 +6,5 @@ tags: [data, python, javascript]
 hidden: true
 ---
 Coming soon...
+
+<img src="../assets/arthur-ma.jpg">
