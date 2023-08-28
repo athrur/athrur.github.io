@@ -14,27 +14,27 @@ $small-width: 480px;
 html, html[data-theme="light"] {
     --background-color: white;
     --text-color: black;
-    --navbar-color: #272727
+    --navbar-color: #272727;
 }
 
 html[data-theme="dark"] {
     --background-color: black;
-    --text-color: white;
-    --navbar-color: white;
+    --text-color: #f9f9f9;
+    --navbar-color: #f9f9f9;
 }
 
 
 @media (prefers-color-scheme: dark) {
     html, html[data-theme="dark"] {
         --background-color: black;
-        --text-color: white;
-        --navbar-color: white;
+        --text-color: #f9f9f9;
+        --navbar-color: #f9f9f9;
     }
 
     html[data-theme="light"] {
         --background-color: white;
         --text-color: black;
-        --navbar-color: #272727
+        --navbar-color: #272727;
   } 
 }
 

@@ -14,12 +14,11 @@
             >
                 {{ x.name }}
             </a>
-            <!-- {% if forloop.last == false %}/{% endif %} -->
             /
         </li>
         {% endfor %}
         <li class="pull-left">
-            <a onclick="modeSwitcher()">Toggle Theme</a>
+            <a onclick="modeSwitcher()" style="cursor: pointer;">Toggle Theme</a>
         </li>
     </ul>
     <hr>
