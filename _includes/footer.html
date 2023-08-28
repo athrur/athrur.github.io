@@ -1,7 +1,7 @@
 <div class="footer">
     {% if site.footer %}
         <br>
-        <a href="{{ site.footer_url }}">{{ site.footer_text }}</a>
+        <a data-umami-event="Clicked Footer Link" href="{{ site.footer_url }}">{{ site.footer_text }}</a>
     {% else %}
         <br>
     {% endif %}
