@@ -1,8 +1,8 @@
 ---
 layout: default
 ---
-
 <div class="page-subtitle">
+    {{page.subtitle}} <br>
     {% for tag in page.tags %}
         {% if page.tags.first == tag %}
             <b>[</b>
@@ -13,8 +13,7 @@ layout: default
         {% else %}
             ,
         {% endif %}
-    {% endfor %}
-    <br>
+    {% endfor %}<br>
     <b>{{ page.date | date: "%d %B %Y" }}</b>
 </div>
 
