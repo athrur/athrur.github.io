@@ -10,9 +10,8 @@
                 {% assign x-url = site.url | append: "/" | append: x.link %}
             {% endif %}
             <a 
-                data-umami-event="Clicked {{ x.name }}"
                 href="{{ x-url }}"
-                {% if x.new-tab %} target="_blank" {% endif %}
+                {% if x.new-tab %} target="_blank" data-umami-event="Clicked {{ x.name }}" {% endif %}
             >
                 {{ x.name }}
             </a>
