@@ -6,7 +6,8 @@ tags: [python, data]
 hidden: false
 ---
 
-We've all seen the tweets. Elon Musk mentions anything about Dogecoin, and the price goes up. Donald Trump tweets about anything, and the price goes down. But is there any truth to this? Can we use Twitter to trade crypto? Read on to find out.
+The Twitterverse has witnessed it all. Elon Musk mentions anything about Dogecoin, and the price skyrockets. Donald Trump tweets about anything, and the price goes pluging. But is there any substance behind this social media and crypto connection? Can trading decisions be based on Twitter trends? Let's dive in and explore the possibilities.
+
 
 <div style="margin: 0 auto; width: 70%;">
 <blockquote class="twitter-tweet"><p lang="en" dir="ltr">Time is the ultimate currency</p>&mdash; Elon Musk (@elonmusk) <a href="https://twitter.com/elonmusk/status/1433713164546293767?ref_src=twsrc%5Etfw">September 3, 2021</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
@@ -17,32 +18,35 @@ We've all seen the tweets. Elon Musk mentions anything about Dogecoin, and the p
 
 ## The Data
 
-To start with, we need to get some data. We need to get the price of the crypto we want to trade, and we need to get the tweets. For this article, I am only interested in [Elon Musk tweeting about Dogecoin](https://twitter.com/elonmusk/status/1485953263040188416), but this could be applied to any crypto and any Twitter account. I am using the following datasets, and I am only interested in 2021 data:
+To embark on this journey, we need data. We require both the crypto price data and the tweets. While my focus here is on Elon Musk's Dogecoin tweets](https://twitter.com/elonmusk/status/1485953263040188416), the method applies to any cryptocurrency and Twitter account. My data sources of choice, limited to 2021, are as follows:
 - [Dogecoin price data](https://www.kaggle.com/datasets/yamqwe/cryptocurrency-extra-data-dogecoin)
 - [Elon Musk tweets](https://www.kaggle.com/datasets/ayhmrba/elon-musk-tweets-2010-2021)
 
-Let's start off by doing some basic analysis on Elon's tweets, and creating a [word cloud](https://github.com/amueller/word_cloud).
+Let's start off by doing some basic analysis on Elon's tweets, and creating a [word cloud](https://github.com/amueller/word_cloud) formed from all the words in his tweets.
 
 <img src="../assets/wordcloud.png">
 
-Do you see it? Just to the right of "tesla", we can see doge. This is what we are interested in. Let's do another word cloud, but this time we will only include tweets that contain doge.
+Spot it? Right next to "tesla" is the word "doge." This is our focal point. Now, let's create another word cloud, but this time, we'll include only tweets containing "doge."
 
 <img src="../assets/doge-wordcloud.png">
 
-As you've hopefully gathered by now, Elon likes to tweet about Dogecoin. But does the world care? Let's take a look at the price of Dogecoin over time, and when Elon tweets about it.
+As you may have deduced, Elon is fond of tweeting about Dogecoin. But does the world care? Let's take a look at the price of Dogecoin over time, and when Elon tweets about it.
 
 <img src="../assets/doge-tweets-price.png">
 
-Hmm. That's not very useful. I think we need to zoom in a bit. Let's take a deeper look at a few examples.
+Hmm. Not very enlightening, right? It's time for a closer inspection. Let's delve into a few examples.
+
 <div style="margin: 0 auto; width: 70%;">
 <blockquote
 class="twitter-tweet"><p lang="en" dir="ltr">Working with Doge devs to improve system transaction efficiency. Potentially promising.</p>&mdash; Elon Musk (@elonmusk) <a href="https://twitter.com/elonmusk/status/1392974251011895300?ref_src=twsrc%5Etfw">May 13, 2021</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 </div>
-Let's take a look at this one. A big announcement from Elon, any guesses what happened to the price of Dogecoin?
 
+Let's take a look at this one. A big announcement from Elon. Any guesses about Dogecoin's price movement?
 <img src="../assets/13th-may-tweet.png">
 
-Sure enough, the price went up. Over 20% in under 20 minutes in fact. Crazy! But is this a one-off? Not at all. In fact out of the 26 tweets (**not including replies**) that Elon Musk has ever sent containing "doge", 23 out of them have caused the price to go up, with an average price increase 15 minutes later of 7.24%! That's a pretty good return for 15 minutes of work.
+This tweet is a prime example of how a simple message can sway the market. Within minutes of this tweet hitting the feeds, the price of Dogecoin experienced a staggering 20% jump. The power of Elon Musk's words was in full display, showcasing how the market is influenced by his tweets.
+
+This incident is by no means an anomaly. Among the 26 tweets (**excluding replies**) containing the word "doge," an astonishing 23 of them triggered price hikes in Dogecoin. On average, just 15 minutes after these tweets, the price increased by an impressive 7.24%. This discovery shatters any notion of coincidence; it's a pattern that can't be ignored.
 
 The moral of the story, is if you want to make money, just follow Elon Musk on Twitter, and get ready to remortgage your house to buy Dogecoin.
 
