@@ -19,17 +19,17 @@ html, html[data-theme="light"] {
 
 html[data-theme="dark"] {
     --background-color: black;
-    --text-color: #f9f9f9;
-    --navbar-color: #f9f9f9;
+    --text-color: rgb(231, 233, 234);
+    --navbar-color: rgb(231, 233, 234);
 }
 
 
 @media (prefers-color-scheme: dark) {
     html, html[data-theme="dark"] {
         --background-color: black;
-        --text-color: #f9f9f9;
-        --navbar-color: #f9f9f9;
-    }
+        --text-color: rgb(231, 233, 234);
+        --navbar-color: rgb(231, 233, 234);
+}
 
     html[data-theme="light"] {
         --background-color: white;
