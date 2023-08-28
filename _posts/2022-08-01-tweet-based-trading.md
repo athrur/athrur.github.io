@@ -48,6 +48,6 @@ This tweet is a prime example of how a simple message can sway the market. Withi
 
 This incident is by no means an anomaly. Among the 26 tweets (**excluding replies**) containing the word "doge," an astonishing 23 of them triggered price hikes in Dogecoin. On average, just 15 minutes after these tweets, the price increased by an impressive 7.24%. This discovery shatters any notion of coincidence; it's a pattern that can't be ignored.
 
-The moral of the story, is if you want to make money, just follow Elon Musk on Twitter, and get ready to remortgage your house to buy Dogecoin.
+~~The moral of the story, is if you want to make money, just follow Elon Musk on Twitter, and get ready to remortgage your house to buy Dogecoin. Your next trip to the moon is just a tweet away.~~
 
-**DISCLAIMER: NOT FINANCIAL ADVICE, DO NOT DO THIS**
+**DISCLAIMER: NOT FINANCIAL ADVICE, TWITTER IS NOT A SUITABLE SOURCE OF FINANCIAL INFORMATION.**
