@@ -21,9 +21,17 @@ navbar:
    link: "about"
  - name: "Contact"
    absolute-link: "https://linkedin.com/in/arthur-robertson"
-#  - name: "Resume"
-  #  absolute-link: "https://rahulbothra.com/cv.pdf"
 
 plugins:
   - jekyll-sitemap
   - jekyll-seo-tag
+  
+webmaster_verifications:
+  google: "s3E22yr28L3Lhs8ZdJ34k6Rcolu_3VNLJoqAuPl"
+  
+title: Arthur Robertson
+tagline: My blog and personal website.
+description: My personal website and blog about my interests and projects.
+author:
+  name: Arthur Robertson
+  url: https://athrur.github.io/
