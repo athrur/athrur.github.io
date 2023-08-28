@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Tweet Based Trading  
+title: Tweet Based Trading 
 subtitle: Crypto + Twitter = Profit?
 tags: [python, data]
 hidden: false
@@ -21,7 +21,7 @@ To start with, we need to get some data. We need to get the price of the crypto 
 - [Dogecoin price data](https://www.kaggle.com/datasets/yamqwe/cryptocurrency-extra-data-dogecoin)
 - [Elon Musk tweets](https://www.kaggle.com/datasets/ayhmrba/elon-musk-tweets-2010-2021)
 
-Let's start of by doing some basic analysis on Elon's tweets, and creating a [word cloud](https://github.com/amueller/word_cloud).
+Let's start off by doing some basic analysis on Elon's tweets, and creating a [word cloud](https://github.com/amueller/word_cloud).
 
 <img src="../assets/wordcloud.png">
 
@@ -42,8 +42,8 @@ Let's take a look at this one. A big announcement from Elon, any guesses what ha
 
 <img src="../assets/13th-may-tweet.png">
 
-Sure enough, the price went up. Over 20% in under 20 minutes in fact. Crazy! But is this a one off? Not at all. In fact out of the 26 tweets (**not including replies**) that Elon Musk has ever sent containing "doge", 23 out of them have caused the price to go up, with an average price increase 15 minutes later of 7.24%! That's a pretty good return for 15 minutes of work.
+Sure enough, the price went up. Over 20% in under 20 minutes in fact. Crazy! But is this a one-off? Not at all. In fact out of the 26 tweets (**not including replies**) that Elon Musk has ever sent containing "doge", 23 out of them have caused the price to go up, with an average price increase 15 minutes later of 7.24%! That's a pretty good return for 15 minutes of work.
 
-Moral of the story, if you want to make money, just follow Elon Musk on Twitter, and get ready to remortgage your house to buy Dogecoin.
+The moral of the story, is if you want to make money, just follow Elon Musk on Twitter, and get ready to remortgage your house to buy Dogecoin.
 
 **DISCLAIMER: NOT FINANCIAL ADVICE, DO NOT DO THIS**
