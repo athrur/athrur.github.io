@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Bedroom Selection Algorithm
-subtitle: How we used python and statistics to make room selection fun.
+subtitle: Used python and statistics to make room selection fun.
 tags: [python, data]
 hidden: false
 ---

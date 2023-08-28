@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Genetic Algorithm for Blackjack
-subtitle: How I used a genetic algorithm to learn how to play blackjack.
+subtitle: Teaching a genetic algorithm how to play blackjack.
 tags: [machine learning, c]
 hidden: false
 ---
@@ -32,21 +32,23 @@ Now we need a way to evaluate each agent. To do this, we will have each agent pl
 
 Now after we have tested each agent `N` times and got a score for each agent, we can select the best agents to reproduce. To do this, we will use a [tournament selection](https://en.wikipedia.org/wiki/Tournament_selection) method. The tournament selection works in the following way:
 
-```
-1. choose k (the tournament size) individuals from the population at random
-2. choose the best individual from the tournament with probability p
-3. choose the second best individual with probability p*(1-p)
-4. choose the third best individual with probability p*((1-p)^2)
+
+<div>
+1. choose k (the tournament size) individuals from the population at random <br>
+2. choose the best individual from the tournament with probability p <br>
+3. choose the second best individual with probability p*(1-p) <br>
+4. choose the third best individual with probability p*((1-p)^2) <br>
 ... and so on
-```
+</div>
+
 
 Now we have selected the best agents, we can create a new population of agents. To do this, we will use a [crossover](https://en.wikipedia.org/wiki/Crossover_(genetic_algorithm)) method. I chose to use the uniform crossover method, which works in the following way:
 
-```
-for each gene in the policy grid, choose a random number either 0 or 1
- - if the number is 0 take the gene from the first parent
+<div>
+for each gene in the policy grid, choose a random number either 0 or 1: <br>
+ - if the number is 0 take the gene from the first parent <br>
  - if the number is 1 take the gene from the second parent
-```
+</div>
 
 This produces 1 child. I chose to produce 2 children from each pair of parents. Child number 2 is produced in the same way as child number 1, except the parents are swapped, so the first parent becomes the second parent and vice versa.
 

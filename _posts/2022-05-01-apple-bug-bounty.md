@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Apple Security Vulnerability Discovery
-subtitle: A bug bounty story.
+subtitle: A bug bounty story, without the bounty.
 tags: [cybersecurity]
 ---
 
