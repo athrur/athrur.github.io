@@ -75,11 +75,16 @@ First of all, we need a way to play blackjack. For our agents to simulate games 
 Blackjack is suit agnostic, meaning that the suit of a card is irrelevant. All face cards (Jack, Queen, King) are also equal to 10, meaning that there are only actually 10 unique card types (2 through 10 + ace). Casinos also typically play blackjack with multiple decks, sometimes as many as 8. Whilst it would be better to simulate blackjack with the same number of decks as the casino, for simplicity we are simulating an infinite number of decks. This means that the probability of drawing a card is always the same, regardless of what cards have been drawn previously.
 
 ```cpp
-Deck::Deck() : cards{2, 3, 4, 5, 6, 7, 8, 9, 10, 10, 10, 10, 11}, gen(rd()), dis(0, 12){}
+Deck::Deck() : 
+    cards{2, 3, 4, 5, 6, 7, 8, 9, 10, 10, 10, 10, 11},
+    gen(rd()),
+    dis(0, 12)
+{}
 
 int Deck::deal() { 
     return cards[dis(gen)]; 
 }
+
 ```
 
 Here is the code for the deck. We have a vector of cards, with the values of each card. We then have a random number generator, which we use to generate a random number between 0 and 12, which we use to index the vector of cards. This is all we need to quickly and efficiently simulate pulling a card from a deck.
