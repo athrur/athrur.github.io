@@ -26,9 +26,6 @@ plugins:
   - jekyll-sitemap
   - jekyll-seo-tag
   
-webmaster_verifications:
-  google: "s3E22yr28L3Lhs8ZdJ34k6Rcolu_3VNLJoqAuPl"
-  
 title: Arthur Robertson
 tagline: My blog and personal website.
 description: My personal website and blog about my interests and projects.
