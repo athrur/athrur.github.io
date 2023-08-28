@@ -295,8 +295,13 @@ table tr th :last-child, table tr td :last-child {
     margin: 0;
 }
 
-.code {
+pre {
     max-width: 100%;
+    background-color: #fff7f6;
+    border-radius: 5px;
+    padding: 10px;
+    overflow-x: auto;
+    border: none;
 }
 
 .highlight .hll { background-color: #ffffcc }
