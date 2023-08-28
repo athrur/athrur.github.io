@@ -9,7 +9,7 @@ tags: [coursework, python, c, java]
 As my first year of university comes to a close, I thought it would be fun to look back on some of the coursework I've completed. Unfortunately, I'm not allowed to share the code for any of these projects (university rules), but I can share my thoughts.
 
 # Saturated Reverse Polish Notation Calculator
-Our first introduction to coursework at University was to create a [Satured Reverse Polish Notation](https://en.wikipedia.org/wiki/Reverse_Polish_notation) (SRPN) Calculator. Rather than being given a set of requirements and documentation, our job was to reverse engineer the compiled program and implement as many of the features we could find in Python. This proved quite challenging, as there was a whole host of features to be discovered by trial and error, with limited time.
+Our first introduction to coursework at University was to create a [Satured Reverse Polish Notation](https://en.wikipedia.org/wiki/Reverse_Polish_notation) (SRPN) Calculator. Reverse Polish Notation is a mathematical notation where operators follow their operands. For example, `1 + 2` would be written as `1 2 +`. It is used in many computer systems, as it is easier to parse than infix notation. Rather than being given a set of requirements and documentation, our job was to reverse engineer the compiled program and implement as many of the features we could find in Python. This proved quite challenging, as there was a whole host of features to be discovered by trial and error, with limited time.
 
 The project required the use of a stack to store the numbers and allow them to be evaluated in [postfix notation](https://en.wikipedia.org/wiki/Reverse_Polish_notation), instead of the [infix notation](https://en.wikipedia.org/wiki/Infix_notation) we are all used to. This was a great introduction to the concept of stacks, and how they can be used to solve problems.
 
@@ -55,7 +55,7 @@ The trickiest part of the project was the enemy bot, which required the implemen
 
 # C and Java Exercises
 
-The C and Java Exercises were two separate bits of coursework, but there's not much to say about them. They were a series of small exercises to get us used to the syntax of the languages and were quite enjoyable. I found the C exercises more challenging, as I had never used C before, but I found it quite enjoyable to learn a new language. The problems were similar to the likes of [Leetcode](https://leetcode.com/), with a difficulty of maybe Easy to Medium. There was also a question involving multithreading file handling in Java, which was quite interesting.
+The C and Java Exercises were two separate bits of coursework, but there's not much to say about them. They were a series of small exercises to get us used to the syntax of the languages and were quite enjoyable. I found the C exercises more challenging, as I had never used C before, but I found it quite enjoyable to learn a new language. The problems were similar to the likes of [Leetcode](https://leetcode.com/), with a difficulty of maybe Easy to Medium. A question implementing an XOR linked list was quite fun, and there was also a question involving multithreading file handling in Java, which was interesting.
 
 ## Ratings
 - Difficulty: 2.5/5
@@ -65,7 +65,9 @@ The C and Java Exercises were two separate bits of coursework, but there's not m
 
 # Spam or Ham Classifier
 
-Now onto the final and favourite project of the year. The Spam or Ham Classifier was a project to build a spam classifier using whatever implementation we wanted, as long as it was in Python and only used NumPy. We were given a dataset of 1,000 emails with features already extracted, and our goal was to build a classifier to be marked on an unseen dataset of emails. Over the year we learned several different techniques for classification, including Naive Bayes and Nearest Neighbour, but we were encouraged to use whatever we wanted.
+Now onto the final and favourite project of the year. The Spam or Ham Classifier was a project to build a spam classifier using whatever implementation we wanted, as long as it was in Python and only used NumPy. A classifier is a machine learning algorithm that takes a set of features and predicts a class. In this case, the classes were spam or ham, representing a spam email or a non-spam email. In a traditional machine learning project, we would have to extract the features from the emails ourselves, but this was already done for us. A feature could be the number of times a certain word appears in the email, or the length of the email, for example, but in our case, it was anonymised, so we didn't know what the features actually represented.
+
+We were given a dataset of 1,000 emails with extracted features, and our goal was to build a classifier to be marked on an unseen dataset of emails. Over the year we learned several different techniques for classification, including Naive Bayes and Nearest Neighbour, but we were encouraged to use whatever we wanted.
 
 I experimented extensively on the dataset with different techniques. I eventually settled on a voting algorithm which combined the results of several different classifiers. This included [Nearest K Neighbours](https://www.ibm.com/topics/knn), [Naives Bayes](https://www.ibm.com/topics/naive-bayes), and [Logistic Regression](https://www.ibm.com/topics/logistic-regression). This allowed my classifier to achieve an accuracy of 93% on the unseen dataset, which was considered excellent.
 
@@ -79,5 +81,5 @@ I experimented extensively on the dataset with different techniques. I eventuall
 
 # Overall
 
-Overall I enjoyed _most_ of the coursework I completed this year. I found the projects to be quite challenging, but also very rewarding. I ended the year with an average of 90% across all my coursework, which I was pretty pleased with (anything above 70% is a first and considered "Outstanding"). I'm looking forward to next year, when I'll be taking on more challenging projects and learning new things.
+Overall I enjoyed _most_ of the coursework I completed this year. I found the projects to be quite challenging, but also very rewarding. I ended the year with an average of 90% across all my coursework, which I was pretty pleased with (anything above 70% is a first and considered "Outstanding"). I'm looking forward to next year when I'll be taking on more challenging projects and learning new things.
 
