@@ -9,13 +9,42 @@ $max-width: 740px;
 $med-width: 600px;
 $small-width: 480px;
 
-// Basic
+
+
+html, html[data-theme="light"] {
+    --background-color: white;
+    --text-color: black;
+    --navbar-color: #272727
+}
+
+html[data-theme="dark"] {
+    --background-color: black;
+    --text-color: white;
+    --navbar-color: white;
+}
+
+
+@media (prefers-color-scheme: dark) {
+    html, html[data-theme="dark"] {
+        --background-color: black;
+        --text-color: white;
+        --navbar-color: white;
+    }
+
+    html[data-theme="light"] {
+        --background-color: white;
+        --text-color: black;
+        --navbar-color: #272727
+  } 
+}
+
 
 body {
     margin: 0;
     font-family: "Inconsolata";
-    // background-color: #FFFFDD;
     min-height: 100%;
+    background-color: var(--background-color);
+    color: var(--text-color);
 }
 a {
     text-decoration: none;
@@ -58,7 +87,7 @@ hr {
     padding: 30px 0 20px 0;
     .site-title{
         font-size: 32px;
-        color: #272727;
+        color: var(--navbar-color);
         display: inline-block;
     }
 }
@@ -69,7 +98,7 @@ hr {
     margin-bottom:1em;
     .title{
         max-width: 500px;
-        color: #272727;
+        color: var(--navbar-color);
         display: inline-block;
         font-size: 30px;
     }
@@ -107,7 +136,7 @@ hr {
 
 .footer{
     a {
-        color:black;
+        color:var(--text-color)
     }
     text-align: center;
     font-size: small;
@@ -302,6 +331,7 @@ pre {
     padding: 10px;
     overflow-x: auto;
     border: none;
+    color: black;
 }
 
 .highlight .hll { background-color: #ffffcc }
