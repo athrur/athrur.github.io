@@ -15,12 +15,16 @@ html, html[data-theme="light"] {
     --background-color: white;
     --text-color: black;
     --navbar-color: #272727;
+    --heading-under-color: rgba(0, 0, 0, 0.1);
+    --heading-over-color: rgba(50, 50, 50, 0.3);
 }
 
 html[data-theme="dark"] {
     --background-color: black;
     --text-color: rgb(231, 233, 234);
     --navbar-color: rgb(231, 233, 234);
+    --heading-under-color: rgba(255, 255, 255, 0.2);
+    --heading-over-color: rgba(255, 255, 255, 0.3);
 }
 
 
@@ -28,13 +32,18 @@ html[data-theme="dark"] {
     html, html[data-theme="dark"] {
         --background-color: black;
         --text-color: rgb(231, 233, 234);
-        --navbar-color: rgb(231, 233, 234);
+        --navbar-color: rgb(231, 233, 234);    
+        --heading-under-color: rgba(255, 255, 255, 0.2);
+        --heading-over-color: rgba(255, 255, 255, 0.3);
+    
 }
 
     html[data-theme="light"] {
         --background-color: white;
         --text-color: black;
         --navbar-color: #272727;
+        --heading-under-color: rgba(0, 0, 0, 0.1);
+        --heading-over-color: rgba(50, 50, 50, 0.3);
   } 
 }
 
@@ -201,8 +210,8 @@ hr {
         content: '';
         display: block;
         width: 50%;
-        border-top: 0.5px solid rgba(0, 0, 0, 0.1);
-        border-bottom: 0.5px solid rgba(50, 50, 50, 0.3);
+        border-top: 0.5px solid var(--heading-under-color);
+        border-bottom: 0.5px solid var(--heading-over-color)
     }
 
     ol {
