@@ -18,7 +18,7 @@ The Twitterverse has witnessed it all. Elon Musk mentions anything about Dogecoi
 
 ## The Data
 
-To embark on this journey, we need data. We require both the crypto price data and the tweets. While my focus here is on Elon Musk's Dogecoin tweets](https://twitter.com/elonmusk/status/1485953263040188416), the method applies to any cryptocurrency and Twitter account. My data sources of choice, limited to 2021, are as follows:
+To embark on this journey, we need data. We require both the crypto price data and the tweets. While my focus here is on [Elon Musk's Dogecoin tweets](https://twitter.com/elonmusk/status/1485953263040188416), the method applies to any cryptocurrency and Twitter account. My data sources of choice, limited to 2021, are as follows:
 - [Dogecoin price data](https://www.kaggle.com/datasets/yamqwe/cryptocurrency-extra-data-dogecoin)
 - [Elon Musk tweets](https://www.kaggle.com/datasets/ayhmrba/elon-musk-tweets-2010-2021)
 
