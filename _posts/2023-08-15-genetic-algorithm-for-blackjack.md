@@ -89,10 +89,25 @@ int Deck::deal() {
 
 Here is the code for the deck. We have a vector of cards, with the values of each card. We then have a random number generator, which we use to generate a random number between 0 and 12, which we use to index the vector of cards. This is all we need to quickly and efficiently simulate pulling a card from a deck.
 
-... To be finished ...
+With this sorted, it doesn't take long to write the code for the rest of the game. We have a `Player` class, which holds the player's hand and the player's score, as well as a method to "play", e.g. hit or stand. We also have a `Dealer` class, which is the same as the player class, except it has a method to play automatically, based on the rules of blackjack. Finally, we have a `Game` class, which holds the deck, the player, and the dealer, and has a method to play the game. This is all we need to simulate blackjack.
+
+With the blackjack engine sorted, we can move onto the genetic algorithm.
+
+## Genetic Algorithm
+
+The genetic algorithm just implements the algorithm described above. We have a `Policy` class, which holds the policy grid, and has methods to mutate and crossover. We also have a `Population` class, which holds a vector of policies, and has methods to evaluate, select, and reproduce. Finally, we have a `GeneticAlgorithm` class, which holds the population, and has a method to run the algorithm.
+
+The `GeneticAlgorithm` class is the main class, and is where we run the algorithm. We first initialise the population, and then run the algorithm for a set number of generations. For each generation, we evaluate the population, select the best policies, and reproduce. We then mutate the population, and repeat the process for the next generation. Once we have run the algorithm for the set number of generations, we return the best policy.
 
 # Parameters
-Coming soon...
+
+Finding the right parameters for the algorithm is crucial. The wrong parameters can lead to the algorithm getting stuck in local optima, or taking too long to converge. I spent a lot of time tweaking the parameters to find the best ones, and I discovered a few things along the way.
+
+### Population Size
+I found that the population size had a large impact on the performance of the algorithm. A larger population size meant that the algorithm was able to explore the search space more effectively, and therefore was more likely to find the optimal solution. However, a larger population size also meant that the algorithm took longer to run. I found that a population size of 800 was a good balance between performance and speed. Increasing the population size beyond this point did not have a significant impact on the performance of the algorithm, but did increase the time taken to run.
+
+### Games Per Generation
+Games Per Generation corresponds to how many times each agent plays blackjack when we evaluate the population. I found that to begin with a low number of games per generation was fine, but as the algorithm converges towards a solution, it is important to increase the number of games per generation. With a small number of games per generation, the algorithm was getting stuck in a local optima. I found that 10,000 games per generation allowed the optimal solution to be found, and didn't take too long to run (*in C anyway..*).
 
 # Results
 Coming soon...
