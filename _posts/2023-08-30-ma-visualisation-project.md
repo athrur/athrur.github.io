@@ -5,7 +5,7 @@ subtitle: A geo visualisation project for mergers and acquisitions.
 tags: [data, python, javascript]
 ---
 
-Checkout my interactive Mergers and Acquisitions geographical visualisation tool below! This was put together in just a few hours, alongside a group project I took part in on an insight week at [Bloomberg](https://www.bloomberg.com/company/). It is just a prototype, but I currently working on rewriting and updating the application with all the features implemented.
+Checkout my interactive Mergers and Acquisitions geographical visualisation tool below! This was put together in just a few hours, alongside a group project I took part in on an insight week at [Bloomberg](https://www.bloomberg.com/company/). It is just a prototype, but I am currently working on rewriting and updating the application with all the features implemented.
 
 **Please note**: On mobile or small devices, for best experience please turn your device horizontally and <a href=".">refresh</a>. You are also recommended to use Google Chrome.
 
@@ -17,7 +17,7 @@ Alternatively, you can open it in a <a data-umami-event="Viewed MA App" href="ht
 
 As part of an insight week at [Bloomberg](https://www.bloomberg.com/company/), as part of a group project we were tasked with creating a geographical visualisation tool for mergers and acquisitions. The idea was to create a tool that would allow a user to visualise the geographical spread of M&A deals, and to be able to filter the data by various different metrics.
 
-We were given a vague prompt, and some suggestions and pointers on how to get started. The task was given to us on Tuesday, and we were to present our results on Thursday afternoon, with about 5 hours of work time allocated over the two days. I volunteered to draw a mockup of the application and how it could look, however shortly after attempting to do so, I realised that I am a terrible artist and that I would be better off just building the application instead. So I did.
+We were given a short brief, and some suggestions and pointers on how to get started. The task was given to us on Tuesday, and we were to present our results on Thursday afternoon, with about 5 hours of work time allocated over the two days. I volunteered to draw a mockup of the application and how it could look, however shortly after attempting to do so, I realised that I am a terrible artist and that I would be better off just building the application instead. So I did.
 
 <img src="../assets/drawing.jpg">
 
