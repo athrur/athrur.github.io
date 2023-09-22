@@ -29,7 +29,7 @@ The first step was to clean the data. I used a combination of Python and Excel t
 
 ## API Server
 
-I decided to seperate the application into a seperate client and server. Therefore for my API server, all I really needed was a few basic CRUD endpoints to allow the client to query the data. I decided to use FastAPI, as I have been using it a lot recently and I really enjoy it. Once I converted the Excel sheets into an SQL database, I was able to use SQLAlchemy to query the data. For my prototype, I basically only needed the following endpoints:
+I decided to seperate the application into a seperate client and server. Therefore for my API server, all I really needed was a few basic CRUD endpoints to allow the client to query the data. I decided to use Flask, as I have been using it a lot recently and I really enjoy it. Once I converted the Excel sheets into an SQL database, I was able to use SQLAlchemy to query the data. For my prototype, I basically only needed the following endpoints:
 - `/api/ma` - Returns a list of all the M&A deals
 - `/api/ma/{id}` - Returns a specific M&A deal
 - `/api/companies` - Returns a list of all the companies
